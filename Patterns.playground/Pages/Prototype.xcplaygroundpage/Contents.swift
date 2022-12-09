@@ -1,9 +1,5 @@
 import Foundation
 
-protocol Prototype {
-    func clone() -> Prototype
-}
-
 class Object {
     // private property
     private var configuration: Int
@@ -21,6 +17,11 @@ class Object {
 }
 
 // own implementation
+
+protocol Prototype {
+    func clone() -> Prototype
+}
+
 extension Object: Prototype {
     func clone() -> Prototype {
         return Object(configuration: self.configuration)
