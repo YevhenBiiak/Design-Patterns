@@ -10,5 +10,6 @@
         <page name='Strategy'/>
         <page name='Decorator'/>
         <page name='Adapter'/>
+        <page name='Facade'/>
     </pages>
 </playground>
