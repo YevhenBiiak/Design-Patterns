@@ -4,5 +4,6 @@
         <page name='Prototype'/>
         <page name='Memento'/>
         <page name='Visitor'/>
+        <page name='State'/>
     </pages>
 </playground>
