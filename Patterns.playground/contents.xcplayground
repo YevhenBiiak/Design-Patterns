@@ -7,5 +7,6 @@
         <page name='State'/>
         <page name='Observer'/>
         <page name='Singleton'/>
+        <page name='Strategy'/>
     </pages>
 </playground>
