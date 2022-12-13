@@ -12,5 +12,6 @@
         <page name='Adapter'/>
         <page name='Facade'/>
         <page name='TemplateMethod'/>
+        <page name='Proxy'/>
     </pages>
 </playground>
