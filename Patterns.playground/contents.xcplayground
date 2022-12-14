@@ -14,5 +14,6 @@
         <page name='TemplateMethod'/>
         <page name='Proxy'/>
         <page name='Composite'/>
+        <page name='ChainOfResponsibility'/>
     </pages>
 </playground>
