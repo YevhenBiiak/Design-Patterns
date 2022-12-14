@@ -127,6 +127,7 @@ do  {
     try walletFacade.deductMoneyFromWallet(accountId: "abc", securityCode: 1234, amount: 6)
     
 } catch {
+    
     print("-- ERROR:", error)
 }
 

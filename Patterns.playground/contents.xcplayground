@@ -15,6 +15,7 @@
         <page name='Proxy'/>
         <page name='Composite'/>
         <page name='ChainOfResponsibility'/>
+        <page name='Command'/>
         <page name='Iterator'/>
     </pages>
 </playground>
