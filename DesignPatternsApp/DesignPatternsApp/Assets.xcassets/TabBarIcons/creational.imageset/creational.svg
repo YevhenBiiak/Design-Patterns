@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="30px" viewBox="0 0 29 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>creational</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Behavioral-patterns-screen" transform="translate(-56.000000, -1131.000000)" stroke="#50AD9A" stroke-width="1.8">
+            <g id="TabBar" transform="translate(0.000000, 1127.000000)">
+                <g id="creational" transform="translate(57.000000, 5.000000)">
+                    <line x1="4.5" y1="4.5" x2="13.5" y2="0.5" id="Line"></line>
+                    <line x1="13.5" y1="0.5" x2="26.5" y2="6.5" id="Line-6"></line>
+                    <line x1="26.5" y1="6.5" x2="26.5" y2="21.5" id="Line-7"></line>
+                    <line x1="26.5" y1="21.5" x2="13.5" y2="27.5" id="Line-8"></line>
+                    <line x1="13.5" y1="27.5" x2="13.5" y2="16.5" id="Line-9"></line>
+                    <line x1="13.5" y1="27.5" x2="0.5" y2="21.5" id="Line-10"></line>
+                    <line x1="0.5" y1="21.5" x2="0.5" y2="6.5" id="Line-11"></line>
+                    <line x1="0.5" y1="6.5" x2="13.5" y2="12.5" id="Line-12"></line>
+                    <line x1="13.5" y1="12.5" x2="26.5" y2="6.5" id="Line-13"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

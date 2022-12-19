@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="28px" viewBox="0 0 34 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>structural</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Behavioral-patterns-screen" transform="translate(-190.000000, -1132.000000)" stroke="#50AD9A" stroke-width="1.8">
+            <g id="TabBar" transform="translate(0.000000, 1127.000000)">
+                <g id="structural" transform="translate(190.000000, 5.404819)">
+                    <rect id="Rectangle" x="0.9" y="19.3256017" width="7.99913666" height="7.03222963" rx="3.20000005"></rect>
+                    <rect id="Rectangle" x="13.0004317" y="19.3256017" width="7.99913666" height="7.03222963" rx="3.20000005"></rect>
+                    <rect id="Rectangle" x="25.1008633" y="19.3256017" width="7.99913666" height="7.03222963" rx="3.20000005"></rect>
+                    <rect id="Rectangle" x="13.0004317" y="0.9" width="7.99913666" height="7.03222963" rx="3.20000005"></rect>
+                    <line x1="17" y1="8.12891566" x2="17" y2="19.1289157" id="Line-14" stroke-linecap="round"></line>
+                    <path d="M4.89956833,19.1289157 C4.89956833,17.0885197 4.89956833,15.8046199 4.89956833,15.2772161 C4.89956833,14.4861105 5.66898379,13.0077278 7.22310435,13.0077278 C8.77722491,13.0077278 24.9887834,13.0077278 26.5148619,13.0077278 C28.0409404,13.0077278 29.1004317,14.1410699 29.1004317,15.2772161 C29.1004317,16.034647 29.1004317,17.3185468 29.1004317,19.1289157" id="Path-5" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
