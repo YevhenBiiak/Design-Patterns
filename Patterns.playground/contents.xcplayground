@@ -19,5 +19,6 @@
         <page name='Iterator'/>
         <page name='Mediator'/>
         <page name='FactoryMethod'/>
+        <page name='AbstractFactory'/>
     </pages>
 </playground>
