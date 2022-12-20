@@ -17,5 +17,7 @@
         <page name='ChainOfResponsibility'/>
         <page name='Command'/>
         <page name='Iterator'/>
+        <page name='Mediator'/>
+        <page name='FactoryMethod'/>
     </pages>
 </playground>
