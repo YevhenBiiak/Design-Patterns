@@ -20,5 +20,6 @@
         <page name='Mediator'/>
         <page name='FactoryMethod'/>
         <page name='AbstractFactory'/>
+        <page name='Builder'/>
     </pages>
 </playground>
