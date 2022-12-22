@@ -22,4 +22,5 @@ struct Pattern: Decodable {
     let complexity: Int
     let popularity: Int
     let intent: String
+    let codeExampleURL: String
 }

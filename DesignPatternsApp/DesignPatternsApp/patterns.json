@@ -6,7 +6,8 @@
         "structure": "abstractFactoryStruct",
         "complexity": 2,
         "popularity": 3,
-        "intent": "Abstract Factory is a creational design pattern, which solves the problem of creating entire product families without specifying their concrete classes.\n\nAbstract Factory defines an interface for creating all distinct products but leaves the actual product creation to concrete factory classes. Each factory type corresponds to a certain product variety.\n\nThe client code calls the creation methods of a factory object instead of creating products directly with a constructor call (new operator). Since a factory corresponds to a single product variant, all its products will be compatible.\n\nClient code works with factories and products only through their abstract interfaces. This lets the client code work with any product variants, created by the factory object. You just create a new concrete factory class and pass it to the client code.\n\nIf you can’t figure out the difference between various factory patterns and concepts, then read our Factory Comparison.\n\nUsage examples: The Abstract Factory pattern is pretty common in Swift code. Many frameworks and libraries use it to provide a way to extend and customize their standard components.\n\nIdentification: The pattern is easy to recognize by methods, which return a factory object. Then, the factory is used for creating specific sub-components."
+        "intent": "Abstract Factory is a creational design pattern, which solves the problem of creating entire product families without specifying their concrete classes.\n\nAbstract Factory defines an interface for creating all distinct products but leaves the actual product creation to concrete factory classes. Each factory type corresponds to a certain product variety.\n\nThe client code calls the creation methods of a factory object instead of creating products directly with a constructor call (new operator). Since a factory corresponds to a single product variant, all its products will be compatible.\n\nClient code works with factories and products only through their abstract interfaces. This lets the client code work with any product variants, created by the factory object. You just create a new concrete factory class and pass it to the client code.\n\nIf you can’t figure out the difference between various factory patterns and concepts, then read our Factory Comparison.\n\nUsage examples: The Abstract Factory pattern is pretty common in Swift code. Many frameworks and libraries use it to provide a way to extend and customize their standard components.\n\nIdentification: The pattern is easy to recognize by methods, which return a factory object. Then, the factory is used for creating specific sub-components.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/AbstractFactory.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Builder",
@@ -15,7 +16,8 @@
         "structure": "builderStruct",
         "complexity": 2,
         "popularity": 3,
-        "intent": "Builder is a creational design pattern, which allows constructing complex objects step by step.\n\nUnlike other creational patterns, Builder doesn’t require products to have a common interface. That makes it possible to produce different products using the same construction process.\n\nUsage examples: The Builder pattern is a well-known pattern in Swift world. It’s especially useful when you need to create an object with lots of possible configuration options.\n\nIdentification: The Builder pattern can be recognized in a class, which has a single creation method and several methods to configure the resulting object. Builder methods often support chaining (for example, someBuilder.setValueA(1).setValueB(2).create())."
+        "intent": "Builder is a creational design pattern, which allows constructing complex objects step by step.\n\nUnlike other creational patterns, Builder doesn’t require products to have a common interface. That makes it possible to produce different products using the same construction process.\n\nUsage examples: The Builder pattern is a well-known pattern in Swift world. It’s especially useful when you need to create an object with lots of possible configuration options.\n\nIdentification: The Builder pattern can be recognized in a class, which has a single creation method and several methods to configure the resulting object. Builder methods often support chaining (for example, someBuilder.setValueA(1).setValueB(2).create()).",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Builder.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Factory Method",
@@ -24,7 +26,8 @@
         "structure": "factoryMethodStruct",
         "complexity": 1,
         "popularity": 3,
-        "intent": "Factory method is a creational design pattern which solves the problem of creating product objects without specifying their concrete classes.\n\nThe Factory Method defines a method, which should be used for creating objects instead of using a direct constructor call (new operator). Subclasses can override this method to change the class of objects that will be created.\n\nUsage examples: The Factory Method pattern is widely used in Swift code. It’s very useful when you need to provide a high level of flexibility for your code.\n\nIdentification: Factory methods can be recognized by creation methods that construct objects from concrete classes. While concrete classes are used during the object creation, the return type of the factory methods is usually declared as either an abstract class or an interface."
+        "intent": "Factory method is a creational design pattern which solves the problem of creating product objects without specifying their concrete classes.\n\nThe Factory Method defines a method, which should be used for creating objects instead of using a direct constructor call (new operator). Subclasses can override this method to change the class of objects that will be created.\n\nUsage examples: The Factory Method pattern is widely used in Swift code. It’s very useful when you need to provide a high level of flexibility for your code.\n\nIdentification: Factory methods can be recognized by creation methods that construct objects from concrete classes. While concrete classes are used during the object creation, the return type of the factory methods is usually declared as either an abstract class or an interface.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/FactoryMethod.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Prototype",
@@ -33,7 +36,8 @@
         "structure": "prototypeStruct",
         "complexity": 1,
         "popularity": 2,
-        "intent": "Prototype is a creational design pattern that allows cloning objects, even complex ones, without coupling to their specific classes.\n\nAll prototype classes should have a common interface that makes it possible to copy objects even if their concrete classes are unknown. Prototype objects can produce full copies since objects of the same class can access each other’s private fields.\n\nUsage examples: The Prototype pattern is available in Swift out of the box with a NSCopying interface.\n\nIdentification: The prototype can be easily recognized by a clone or copy methods, etc."
+        "intent": "Prototype is a creational design pattern that allows cloning objects, even complex ones, without coupling to their specific classes.\n\nAll prototype classes should have a common interface that makes it possible to copy objects even if their concrete classes are unknown. Prototype objects can produce full copies since objects of the same class can access each other’s private fields.\n\nUsage examples: The Prototype pattern is available in Swift out of the box with a NSCopying interface.\n\nIdentification: The prototype can be easily recognized by a clone or copy methods, etc.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Prototype.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Singleton",
@@ -42,7 +46,8 @@
         "structure": "singletonStruct",
         "complexity": 1,
         "popularity": 2,
-        "intent": "Singleton is a creational design pattern, which ensures that only one object of its kind exists and provides a single point of access to it for any other code. \n\nSingleton has almost the same pros and cons as global variables. Although they’re super-handy, they break the modularity of your code. \n\nYou can’t just use a class that depends on a Singleton in some other context, without carrying over the Singleton to the other context. Most of the time, this limitation comes up during the creation of unit tests. \n\nUsage examples: A lot of developers consider the Singleton pattern an antipattern. That’s why its usage is on the decline in Swift code. \n\nIdentification: Singleton can be recognized by a static creation method, which returns the same cached object."
+        "intent": "Singleton is a creational design pattern, which ensures that only one object of its kind exists and provides a single point of access to it for any other code. \n\nSingleton has almost the same pros and cons as global variables. Although they’re super-handy, they break the modularity of your code. \n\nYou can’t just use a class that depends on a Singleton in some other context, without carrying over the Singleton to the other context. Most of the time, this limitation comes up during the creation of unit tests. \n\nUsage examples: A lot of developers consider the Singleton pattern an antipattern. That’s why its usage is on the decline in Swift code. \n\nIdentification: Singleton can be recognized by a static creation method, which returns the same cached object.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Singleton.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Adapter",
@@ -51,7 +56,8 @@
         "structure": "adapterStruct",
         "complexity": 1,
         "popularity": 3,
-        "intent": "Adapter is a structural design pattern, which allows incompatible objects to collaborate.\n\nThe Adapter acts as a wrapper between two objects. It catches calls for one object and transforms them to format and interface recognizable by the second object.\n\nUsage examples: The Adapter pattern is pretty common in Swift code. It’s very often used in systems based on some legacy code. In such cases, Adapters make legacy code work with modern classes.\n\nIdentification: Adapter is recognizable by a constructor which takes an instance of a different abstract/interface type. When adapter receives a call to any of its methods, it translates parameters to appropriate format and then directs the call to one or several methods of the wrapped object."
+        "intent": "Adapter is a structural design pattern, which allows incompatible objects to collaborate.\n\nThe Adapter acts as a wrapper between two objects. It catches calls for one object and transforms them to format and interface recognizable by the second object.\n\nUsage examples: The Adapter pattern is pretty common in Swift code. It’s very often used in systems based on some legacy code. In such cases, Adapters make legacy code work with modern classes.\n\nIdentification: Adapter is recognizable by a constructor which takes an instance of a different abstract/interface type. When adapter receives a call to any of its methods, it translates parameters to appropriate format and then directs the call to one or several methods of the wrapped object.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Adapter.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Composite",
@@ -60,7 +66,8 @@
         "structure": "compositeStruct",
         "complexity": 2,
         "popularity": 2,
-        "intent": "Composite is a structural design pattern that allows composing objects into a tree-like structure and work with the it as if it was a singular object.\n\nComposite became a pretty popular solution for the most problems that require building a tree structure. Composite’s great feature is the ability to run methods recursively over the whole tree structure and sum up the results.\n\nUsage examples: The Composite pattern is pretty common in Swift code. It’s often used to represent hierarchies of user interface components or the code that works with graphs.\n\nIdentification: If you have an object tree, and each object of a tree is a part of the same class hierarchy, this is most likely a composite. If methods of these classes delegate the work to child objects of the tree and do it via the base class/interface of the hierarchy, this is definitely a composite."
+        "intent": "Composite is a structural design pattern that allows composing objects into a tree-like structure and work with the it as if it was a singular object.\n\nComposite became a pretty popular solution for the most problems that require building a tree structure. Composite’s great feature is the ability to run methods recursively over the whole tree structure and sum up the results.\n\nUsage examples: The Composite pattern is pretty common in Swift code. It’s often used to represent hierarchies of user interface components or the code that works with graphs.\n\nIdentification: If you have an object tree, and each object of a tree is a part of the same class hierarchy, this is most likely a composite. If methods of these classes delegate the work to child objects of the tree and do it via the base class/interface of the hierarchy, this is definitely a composite.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Composite.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Decorator",
@@ -69,7 +76,8 @@
         "structure": "decoratorStruct",
         "complexity": 2,
         "popularity": 2,
-        "intent": "Decorator is a structural pattern that allows adding new behaviors to objects dynamically by placing them inside special wrapper objects, called decorators.\n\nUsing decorators you can wrap objects countless number of times since both target objects and decorators follow the same interface. The resulting object will get a stacking behavior of all wrappers.\n\nUsage examples: The Decorator is pretty standard in Swift code, especially in code related to streams.\n\nIdentification: Decorator can be recognized by creation methods or constructors that accept objects of the same class or interface as a current class."
+        "intent": "Decorator is a structural pattern that allows adding new behaviors to objects dynamically by placing them inside special wrapper objects, called decorators.\n\nUsing decorators you can wrap objects countless number of times since both target objects and decorators follow the same interface. The resulting object will get a stacking behavior of all wrappers.\n\nUsage examples: The Decorator is pretty standard in Swift code, especially in code related to streams.\n\nIdentification: Decorator can be recognized by creation methods or constructors that accept objects of the same class or interface as a current class.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Decorator.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Facade",
@@ -78,7 +86,8 @@
         "structure": "facadeStruct",
         "complexity": 1,
         "popularity": 2,
-        "intent": "Facade is a structural design pattern that provides a simplified (but limited) interface to a complex system of classes, library or framework.\n\nWhile Facade decreases the overall complexity of the application, it also helps to move unwanted dependencies to one place.\n\nUsage examples: The Facade pattern is commonly used in apps written in Swift. It’s especially handy when working with complex libraries and APIs.\n\nIdentification: Facade can be recognized in a class that has a simple interface, but delegates most of the work to other classes. Usually, facades manage the full life cycle of objects they use."
+        "intent": "Facade is a structural design pattern that provides a simplified (but limited) interface to a complex system of classes, library or framework.\n\nWhile Facade decreases the overall complexity of the application, it also helps to move unwanted dependencies to one place.\n\nUsage examples: The Facade pattern is commonly used in apps written in Swift. It’s especially handy when working with complex libraries and APIs.\n\nIdentification: Facade can be recognized in a class that has a simple interface, but delegates most of the work to other classes. Usually, facades manage the full life cycle of objects they use.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Facade.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Proxy",
@@ -87,7 +96,8 @@
         "structure": "proxyStruct",
         "complexity": 2,
         "popularity": 1,
-        "intent": "Proxy is a structural design pattern that provides an object that acts as a substitute for a real service object used by a client. A proxy receives client requests, does some work (access control, caching, etc.) and then passes the request to a service object.\n\nThe proxy object has the same interface as a service, which makes it interchangeable with a real object when passed to a client.\n\nUsage examples: While the Proxy pattern isn’t a frequent guest in most Swift applications, it’s still very handy in some special cases. It’s irreplaceable when you want to add some additional behaviors to an object of some existing class without changing the client code.\n\nIdentification: Proxies delegate all of the real work to some other object. Each proxy method should, in the end, refer to a service object unless the proxy is a subclass of a service."
+        "intent": "Proxy is a structural design pattern that provides an object that acts as a substitute for a real service object used by a client. A proxy receives client requests, does some work (access control, caching, etc.) and then passes the request to a service object.\n\nThe proxy object has the same interface as a service, which makes it interchangeable with a real object when passed to a client.\n\nUsage examples: While the Proxy pattern isn’t a frequent guest in most Swift applications, it’s still very handy in some special cases. It’s irreplaceable when you want to add some additional behaviors to an object of some existing class without changing the client code.\n\nIdentification: Proxies delegate all of the real work to some other object. Each proxy method should, in the end, refer to a service object unless the proxy is a subclass of a service.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Proxy.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Chain of Responsibility",
@@ -96,7 +106,8 @@
         "structure": "chainOfResponsibilityStruct",
         "complexity": 2,
         "popularity": 2,
-        "intent": "Chain of Responsibility is behavioral design pattern that allows passing request along the chain of potential handlers until one of them handles request.\n\nThe pattern allows multiple objects to handle the request without coupling sender class to the concrete classes of the receivers. The chain can be composed dynamically at runtime with any handler that follows a standard handler interface.\n\nUsage examples: The Chain of Responsibility is pretty common in Swift. It’s mostly relevant when your code operates with chains of objects, such as filters, event chains, etc.\n\nIdentification: The pattern is recognizable by behavioral methods of one group of objects that indirectly call the same methods in other objects, while all the objects follow the common interface."
+        "intent": "Chain of Responsibility is behavioral design pattern that allows passing request along the chain of potential handlers until one of them handles request.\n\nThe pattern allows multiple objects to handle the request without coupling sender class to the concrete classes of the receivers. The chain can be composed dynamically at runtime with any handler that follows a standard handler interface.\n\nUsage examples: The Chain of Responsibility is pretty common in Swift. It’s mostly relevant when your code operates with chains of objects, such as filters, event chains, etc.\n\nIdentification: The pattern is recognizable by behavioral methods of one group of objects that indirectly call the same methods in other objects, while all the objects follow the common interface.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/ChainOfResponsibility.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Command",
@@ -105,7 +116,8 @@
         "structure": "commandStruct",
         "complexity": 1,
         "popularity": 3,
-        "intent": "Command is behavioral design pattern that converts requests or simple operations into objects.\n\nThe conversion allows deferred or remote execution of commands, storing command history, etc.\n\nUsage examples: The Command pattern is pretty common in Swift code. Most often it’s used as an alternative for callbacks to parameterizing UI elements with actions. It’s also used for queueing tasks, tracking operations history, etc.\n\nIdentification: The Command pattern is recognizable by behavioral methods in an abstract/interface type (sender) which invokes a method in an implementation of a different abstract/interface type (receiver) which has been encapsulated by the command implementation during its creation. Command classes are usually limited to specific actions."
+        "intent": "Command is behavioral design pattern that converts requests or simple operations into objects.\n\nThe conversion allows deferred or remote execution of commands, storing command history, etc.\n\nUsage examples: The Command pattern is pretty common in Swift code. Most often it’s used as an alternative for callbacks to parameterizing UI elements with actions. It’s also used for queueing tasks, tracking operations history, etc.\n\nIdentification: The Command pattern is recognizable by behavioral methods in an abstract/interface type (sender) which invokes a method in an implementation of a different abstract/interface type (receiver) which has been encapsulated by the command implementation during its creation. Command classes are usually limited to specific actions.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Command.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Iterator",
@@ -114,7 +126,8 @@
         "structure": "iteratorStruct",
         "complexity": 2,
         "popularity": 3,
-        "intent": "Iterator is a behavioral design pattern that allows sequential traversal through a complex data structure without exposing its internal details.\n\nThanks to the Iterator, clients can go over elements of different collections in a similar fashion using a single iterator interface.\n\nUsage examples: The pattern is very common in Swift code. Many frameworks and libraries use it to provide a standard way for traversing their collections.\n\nIdentification: Iterator is easy to recognize by the navigation methods (such as next, previous and others). Client code that uses iterators might not have direct access to the collection being traversed."
+        "intent": "Iterator is a behavioral design pattern that allows sequential traversal through a complex data structure without exposing its internal details.\n\nThanks to the Iterator, clients can go over elements of different collections in a similar fashion using a single iterator interface.\n\nUsage examples: The pattern is very common in Swift code. Many frameworks and libraries use it to provide a standard way for traversing their collections.\n\nIdentification: Iterator is easy to recognize by the navigation methods (such as next, previous and others). Client code that uses iterators might not have direct access to the collection being traversed.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Iterator.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Mediator",
@@ -123,7 +136,8 @@
         "structure": "mediatorStruct",
         "complexity": 2,
         "popularity": 0,
-        "intent": "Mediator is a behavioral design pattern that reduces coupling between components of a program by making them communicate indirectly, through a special mediator object.\n\nThe Mediator makes it easy to modify, extend and reuse individual components because they’re no longer dependent on the dozens of other classes.\n\nUsage examples: The most popular usage of the Mediator pattern in Swift code is facilitating communications between GUI components of an app. The synonym of the Mediator is the Controller part of MVC pattern."
+        "intent": "Mediator is a behavioral design pattern that reduces coupling between components of a program by making them communicate indirectly, through a special mediator object.\n\nThe Mediator makes it easy to modify, extend and reuse individual components because they’re no longer dependent on the dozens of other classes.\n\nUsage examples: The most popular usage of the Mediator pattern in Swift code is facilitating communications between GUI components of an app. The synonym of the Mediator is the Controller part of MVC pattern.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Mediator.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Memento",
@@ -132,7 +146,8 @@
         "structure": "mementoStruct",
         "complexity": 3,
         "popularity": 1,
-        "intent": "Memento is a behavioral design pattern that allows making snapshots of an object’s state and restoring it in future.\n\nThe Memento doesn’t compromise the internal structure of the object it works with, as well as data kept inside the snapshots.\n\nUsage examples: The Memento’s principle can be achieved using serialization, which is quite common in Swift. While it’s not the only and the most efficient way to make snapshots of an object’s state, it still allows storing state backups while protecting the originator’s structure from other objects."
+        "intent": "Memento is a behavioral design pattern that allows making snapshots of an object’s state and restoring it in future.\n\nThe Memento doesn’t compromise the internal structure of the object it works with, as well as data kept inside the snapshots.\n\nUsage examples: The Memento’s principle can be achieved using serialization, which is quite common in Swift. While it’s not the only and the most efficient way to make snapshots of an object’s state, it still allows storing state backups while protecting the originator’s structure from other objects.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Memento.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Observer",
@@ -141,7 +156,8 @@
         "structure": "observerStruct",
         "complexity": 2,
         "popularity": 3,
-        "intent": "Observer is a behavioral design pattern that allows some objects to notify other objects about changes in their state.\n\nThe Observer pattern provides a way to subscribe and unsubscribe to and from these events for any object that implements a subscriber interface.\n\nUsage examples: The Observer pattern is pretty common in Swift code, especially in the GUI components. It provides a way to react to events happening in other objects without coupling to their classes.\n\nIdentification: The pattern can be recognized by subscription methods, that store objects in a list and by calls to the update method issued to objects in that list."
+        "intent": "Observer is a behavioral design pattern that allows some objects to notify other objects about changes in their state.\n\nThe Observer pattern provides a way to subscribe and unsubscribe to and from these events for any object that implements a subscriber interface.\n\nUsage examples: The Observer pattern is pretty common in Swift code, especially in the GUI components. It provides a way to react to events happening in other objects without coupling to their classes.\n\nIdentification: The pattern can be recognized by subscription methods, that store objects in a list and by calls to the update method issued to objects in that list.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Observer.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "State",
@@ -150,7 +166,8 @@
         "structure": "stateStruct",
         "complexity": 1,
         "popularity": 2,
-        "intent": "State is a behavioral design pattern that allows an object to change the behavior when its internal state changes.\n\nThe pattern extracts state-related behaviors into separate state classes and forces the original object to delegate the work to an instance of these classes, instead of acting on its own.\n\nUsage examples: The State pattern is commonly used in Swift to convert massive switch-base state machines into objects.\n\nIdentification: State pattern can be recognized by methods that change their behavior depending on the objects’ state, controlled externally."
+        "intent": "State is a behavioral design pattern that allows an object to change the behavior when its internal state changes.\n\nThe pattern extracts state-related behaviors into separate state classes and forces the original object to delegate the work to an instance of these classes, instead of acting on its own.\n\nUsage examples: The State pattern is commonly used in Swift to convert massive switch-base state machines into objects.\n\nIdentification: State pattern can be recognized by methods that change their behavior depending on the objects’ state, controlled externally.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/State.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Strategy",
@@ -159,7 +176,8 @@
         "structure": "strategyStruct",
         "complexity": 1,
         "popularity": 3,
-        "intent": "Strategy is a behavioral design pattern that turns a set of behaviors into objects and makes them interchangeable inside original context object.\n\nThe original object, called context, holds a reference to a strategy object. The context delegates executing the behavior to the linked strategy object. In order to change the way the context performs its work, other objects may replace the currently linked strategy object with another one.\n\nUsage examples: The Strategy pattern is very common in Swift code. It’s often used in various frameworks to provide users a way to change the behavior of a class without extending it.\n\nIdentification: Strategy pattern can be recognized by a method that lets a nested object do the actual work, as well as a setter that allows replacing that object with a different one."
+        "intent": "Strategy is a behavioral design pattern that turns a set of behaviors into objects and makes them interchangeable inside original context object.\n\nThe original object, called context, holds a reference to a strategy object. The context delegates executing the behavior to the linked strategy object. In order to change the way the context performs its work, other objects may replace the currently linked strategy object with another one.\n\nUsage examples: The Strategy pattern is very common in Swift code. It’s often used in various frameworks to provide users a way to change the behavior of a class without extending it.\n\nIdentification: Strategy pattern can be recognized by a method that lets a nested object do the actual work, as well as a setter that allows replacing that object with a different one.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Strategy.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Template Method",
@@ -168,7 +186,8 @@
         "structure": "templateMethodStruct",
         "complexity": 1,
         "popularity": 2,
-        "intent": "Template Method is a behavioral design pattern that allows you to defines a skeleton of an algorithm in a base class and let subclasses override the steps without changing the overall algorithm’s structure.\n\nUsage examples: The Template Method pattern is quite common in Swift frameworks. Developers often use it to provide framework users with a simple means of extending standard functionality using inheritance.\n\nIdentification: Template Method can be recognized if you see a method in base class that calls a bunch of other methods that are either abstract or empty."
+        "intent": "Template Method is a behavioral design pattern that allows you to defines a skeleton of an algorithm in a base class and let subclasses override the steps without changing the overall algorithm’s structure.\n\nUsage examples: The Template Method pattern is quite common in Swift frameworks. Developers often use it to provide framework users with a simple means of extending standard functionality using inheritance.\n\nIdentification: Template Method can be recognized if you see a method in base class that calls a bunch of other methods that are either abstract or empty.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/TemplateMethod.xcplaygroundpage/Contents.swift"
     },
     {
         "title": "Visitor",
@@ -177,6 +196,7 @@
         "structure": "visitorStruct",
         "complexity": 3,
         "popularity": 1,
-        "intent": "Visitor is a behavioral design pattern that allows adding new behaviors to existing class hierarchy without altering any existing code.\n\nUsage examples: Visitor isn’t a very common pattern because of its complexity and narrow applicability."
+        "intent": "Visitor is a behavioral design pattern that allows adding new behaviors to existing class hierarchy without altering any existing code.\n\nUsage examples: Visitor isn’t a very common pattern because of its complexity and narrow applicability.",
+        "codeExampleURL": "https://raw.githubusercontent.com/YevhenBiiak/Design-Patterns/main/Patterns.playground/Pages/Visitor.xcplaygroundpage/Contents.swift"
     }
 ]

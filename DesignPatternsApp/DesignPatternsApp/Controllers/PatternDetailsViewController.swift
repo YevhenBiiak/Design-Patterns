@@ -31,9 +31,12 @@ class PatternDetailsViewController: UIViewController {
         adjustStructureImageViewSize()
     }
     
-    @IBAction func seeCodeButton(_ sender: UIButton) {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let codeExampleViewController = segue.destination as? CodeExampleViewController
+        codeExampleViewController?.codeExampleURL = pattern.codeExampleURL
     }
+    
+    // MARK: - Private methods
     
     private func adjustStructureImageViewSize() {
         
