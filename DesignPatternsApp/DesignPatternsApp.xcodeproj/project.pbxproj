@@ -15,6 +15,8 @@
 		57403A40294C71CA00999BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57403A3E294C71CA00999BD8 /* LaunchScreen.storyboard */; };
 		57403A4A29508F4500999BD8 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57403A4929508F4500999BD8 /* Pattern.swift */; };
 		57403A4C295094A100999BD8 /* PatternCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57403A4B295094A100999BD8 /* PatternCollectionViewCell.swift */; };
+		57403A4E2950AF7400999BD8 /* PatternDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57403A4D2950AF7400999BD8 /* PatternDetailsViewController.swift */; };
+		5797FB5829546566009F7970 /* patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = 5797FB5729546566009F7970 /* patterns.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		57403A41294C71CA00999BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57403A4929508F4500999BD8 /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
 		57403A4B295094A100999BD8 /* PatternCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternCollectionViewCell.swift; sourceTree = "<group>"; };
+		57403A4D2950AF7400999BD8 /* PatternDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternDetailsViewController.swift; sourceTree = "<group>"; };
+		5797FB5729546566009F7970 /* patterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = patterns.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +66,41 @@
 			children = (
 				57403A33294C71C900999BD8 /* AppDelegate.swift */,
 				57403A35294C71C900999BD8 /* SceneDelegate.swift */,
-				57403A4929508F4500999BD8 /* Pattern.swift */,
-				57403A37294C71C900999BD8 /* PatternsViewController.swift */,
-				57403A4B295094A100999BD8 /* PatternCollectionViewCell.swift */,
+				57403A4F2950AF9E00999BD8 /* Models */,
+				57403A512950AFCC00999BD8 /* Views */,
+				57403A502950AFC100999BD8 /* Controllers */,
 				57403A39294C71C900999BD8 /* Main.storyboard */,
 				57403A3C294C71CA00999BD8 /* Assets.xcassets */,
 				57403A3E294C71CA00999BD8 /* LaunchScreen.storyboard */,
 				57403A41294C71CA00999BD8 /* Info.plist */,
+				5797FB5729546566009F7970 /* patterns.json */,
 			);
 			path = DesignPatternsApp;
+			sourceTree = "<group>";
+		};
+		57403A4F2950AF9E00999BD8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57403A4929508F4500999BD8 /* Pattern.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		57403A502950AFC100999BD8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57403A37294C71C900999BD8 /* PatternsViewController.swift */,
+				57403A4D2950AF7400999BD8 /* PatternDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		57403A512950AFCC00999BD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57403A4B295094A100999BD8 /* PatternCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +164,7 @@
 				57403A40294C71CA00999BD8 /* LaunchScreen.storyboard in Resources */,
 				57403A3D294C71CA00999BD8 /* Assets.xcassets in Resources */,
 				57403A3B294C71C900999BD8 /* Main.storyboard in Resources */,
+				5797FB5829546566009F7970 /* patterns.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +177,7 @@
 			files = (
 				57403A4C295094A100999BD8 /* PatternCollectionViewCell.swift in Sources */,
 				57403A38294C71C900999BD8 /* PatternsViewController.swift in Sources */,
+				57403A4E2950AF7400999BD8 /* PatternDetailsViewController.swift in Sources */,
 				57403A34294C71C900999BD8 /* AppDelegate.swift in Sources */,
 				57403A36294C71C900999BD8 /* SceneDelegate.swift in Sources */,
 				57403A4A29508F4500999BD8 /* Pattern.swift in Sources */,

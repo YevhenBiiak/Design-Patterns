@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="22px" viewBox="0 0 26 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pattern-details-screen" transform="translate(-18.000000, -987.000000)" stroke="#444444" stroke-width="1.8">
+            <g id="Structure" transform="translate(18.358818, 986.488931)">
+                <g id="icon" transform="translate(0.000000, 1.500000)">
+                    <rect id="Rectangle" x="0.9" y="14.7412699" width="5.5753526" height="4.8021036" rx="2.4010518"></rect>
+                    <rect id="Rectangle" x="9.9623237" y="14.7412699" width="5.5753526" height="4.8021036" rx="2.4010518"></rect>
+                    <rect id="Rectangle" x="19.0246474" y="14.7412699" width="5.5753526" height="4.8021036" rx="2.4010518"></rect>
+                    <rect id="Rectangle" x="9.9623237" y="0.9" width="5.5753526" height="4.8021036" rx="2.4010518"></rect>
+                    <line x1="12.791986" y1="6.8003062" x2="12.791986" y2="13.6963855" id="Line-7" stroke-linecap="square"></line>
+                    <path d="M3.6876763,14.2163068 C3.6876763,13.0168189 3.6876763,12.1540308 3.6876763,11.6279426 C3.6876763,10.5459652 4.50295209,9.76026169 5.32268965,9.76026169 C6.78975612,9.76026169 9.26552624,9.76026169 12.75,9.76026169 C15.1212013,9.76026169 17.430091,9.76026169 19.6766689,9.76026169 C21.1114319,9.76026169 21.8123237,10.567427 21.8123237,11.6279426 C21.8123237,12.118009 21.8123237,12.9807971 21.8123237,14.2163068" id="Path-10"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
