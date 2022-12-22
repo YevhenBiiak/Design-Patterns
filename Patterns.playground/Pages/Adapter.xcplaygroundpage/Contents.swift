@@ -42,8 +42,8 @@ extension TwitterAuthSDK: AuthService {
     }
 }
 
-// second way (adaptor class)
-class TwitterAuthAdaptor: AuthService {
+// second way (adapter class)
+class TwitterAuthAdapter: AuthService {
     private let twitterAuthSDK: TwitterAuthSDK
     
     init(twitterAuthSDK: TwitterAuthSDK) {
@@ -67,7 +67,7 @@ coordinator.startAuthorization(with: TwitterAuthSDK())
 print()
 
 // second way
-let twitterAuth = TwitterAuthAdaptor(twitterAuthSDK: TwitterAuthSDK())
+let twitterAuth = TwitterAuthAdapter(twitterAuthSDK: TwitterAuthSDK())
 coordinator.startAuthorization(with: twitterAuth)
 
 // prints
