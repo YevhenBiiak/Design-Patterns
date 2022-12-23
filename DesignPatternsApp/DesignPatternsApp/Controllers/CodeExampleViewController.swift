@@ -9,10 +9,10 @@ import WebKit
 
 class CodeExampleViewController: UIViewController {
     
-    private let keywordsRegex = /import|protocol|class|struct|enum|case|func|get|set|static|var|let|lazy|init|weak|self|extension|return|throws|throw|if[^a-z0-9]|switch|do[^a-z0-9]|catch|private|final|required|override|Self|\WType/
+    private let keywordsRegex = /import\b|protocol\b|class\b|struct\b|enum\b|case\b|func\b|get\b|set\b|static\b|var\b|let\b|lazy\b|init\b|weak\b|self\b|extension\b|return\b|false\b|true\b|throws\b|throw\b|guard\b|if\b|else\b|switch\b|try\b|async\b|await\b|do\b|catch\b|private\b|final\b|required\b|override\b|Self\b|\bType\b/
     private let typesRegex = /\b[A-Z].\w*/
     private let stringsRegex = /".*"/
-    private let commentsRegex = /\/\/ .*/
+    private let commentsRegex = /\/{2,}.*/
     
     private let keywordsColor = UIColor(red: 252/255, green:  95/255, blue: 163/255, alpha: 1)
     private let typesColor    = UIColor(red:  93/255, green: 216/255, blue: 255/255, alpha: 1)
@@ -28,8 +28,8 @@ class CodeExampleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Font size:"
-        
+        title = "Font size: \(Int(codeLabel.font.pointSize))pt"
+
         activityIndicator.hidesWhenStopped = true
         activityIndicator.startAnimating()
         
@@ -57,10 +57,12 @@ class CodeExampleViewController: UIViewController {
     
     @IBAction func smallerFontSizeButtonTapped(_ sender: UIBarButtonItem) {
         codeLabel.font = codeLabel.font.withSize(codeLabel.font.pointSize - 1)
+        title = "Font size: \(Int(codeLabel.font.pointSize))pt"
     }
     
     @IBAction func largerFontSizeButtonTapped(_ sender: UIBarButtonItem) {
         codeLabel.font = codeLabel.font.withSize(codeLabel.font.pointSize + 1)
+        title = "Font size: \(Int(codeLabel.font.pointSize))pt"
     }
     
     // MARK: - Private methods
