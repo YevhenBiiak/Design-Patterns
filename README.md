@@ -1,10 +1,10 @@
 # Design-Patterns
 
 <p align=center>
-  <img width=23% src="https://user-images.githubusercontent.com/80542175/209331583-de3f757e-529b-4dfb-9fa5-06d08514813c.png"/>
-  <img width=23% src="https://user-images.githubusercontent.com/80542175/209331597-3c080ea4-60d5-4a3c-947c-42eea06c67ba.png"/>
-  <img width=23% src="https://user-images.githubusercontent.com/80542175/209331594-63089b72-a026-453d-89c9-1520a40dcfed.png"/>
-  <img width=23% src="https://user-images.githubusercontent.com/80542175/209331592-c722b2c4-48ff-4c8c-8c05-8a1a1a4e3824.png"/>
+  <img width=24% src="https://user-images.githubusercontent.com/80542175/226975513-4f5921ac-b9f5-498f-8e17-5bb26d6ec715.png"/>
+  <img width=24% src="https://user-images.githubusercontent.com/80542175/226975523-181c9653-c35c-48e0-ae4a-ff8f2e57543f.png"/>
+  <img width=24% src="https://user-images.githubusercontent.com/80542175/226975526-05fd9c9a-c0bc-434b-89ee-4bac70bec185.png"/>
+  <img width=24% src="https://user-images.githubusercontent.com/80542175/226975529-7299904d-42cf-4253-8dbd-30a032b1c88f.png"/>
 </p>
 
 #### Description
@@ -26,24 +26,22 @@ This feature makes it easier for users to find code examples that are relevant t
 
 ## Used Frameworks
 
-- UIKit
+- `UIKit` for handling user interactions
 
 ## Technology Stack
 
-- Sketch
-- Swift
-- Playground
-- Xcode
-- Storyboard
-- JSON
-- Regular Expressions
+- `Sketch` - application design
+- `Swift`, `Xcode`
+- `Storyboard` - create the user interface
+- `Playground` - separate each design pattern
+- `JSON` as an object to store data
+- `Regex` - highlight keywords
 
 <details><summary><h2>Design in Sketch</h2></summary>
   <p align=center>
     <img width=95% src="https://user-images.githubusercontent.com/80542175/209330634-41b2c927-0e16-44bc-9bd1-a343bc240621.png">
   </p>
 </details>
-
 
 <details><summary><h2>GIF DEMO</h2></summary>
   <p align=center>
